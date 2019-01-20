@@ -9,7 +9,6 @@ def key_for_min_value(name_hash)
 
   else
     name_hash.each do |name, age|
-
       if age<x
         y=age
       end
@@ -17,5 +16,4 @@ def key_for_min_value(name_hash)
     end
 
   end
-    return y
 end

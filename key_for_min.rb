@@ -2,21 +2,20 @@
 # Given a hash with numeric values, return the key for the smallest value
 
 def key_for_min_value(name_hash)
- x=0
- y=0
-z=" "
+ x=nil
+ y=nil
+
   if name_hash == nil
     return nil
 
   else
-    name_hash.collect do |name, age|
+    name_hash.each do |name, age|
 
-      if age<x
-        y=age
-        z=name
+      if age<x || x==nil
+        x=age
+        y=name
       end
-      x=age
     end
   end
-  return z
+  return y
 end

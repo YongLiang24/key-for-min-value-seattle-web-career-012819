@@ -4,6 +4,7 @@
 def key_for_min_value(name_hash)
  x=0
  y=0
+z=" "
   if name_hash == nil
     return nil
 
@@ -12,8 +13,10 @@ def key_for_min_value(name_hash)
 
       if age<x
         y=age
+        z=name
       end
       x=age
     end
   end
+  return z
 end
